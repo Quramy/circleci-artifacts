@@ -36,7 +36,7 @@ jobs:
       # run tests!
       - run: yarn build-storybook
 
-      - run: cp -rf storybook-static /var/storybook
+      - run: cp -rf storybook-static /tmp/storybook
 
       - store_artifacts:
-          path: /var/storybook
+          path: /tmp/storybook
